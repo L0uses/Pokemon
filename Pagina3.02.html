@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="A_CSS/Page3.02.css">
+</head>
+<body>
+    <header>
+        <img src="A_Imagens/pokemon.png" alt="">
+    </header>
+    <nav>
+        <div class = "generaciones">
+        </div>
+    </nav>
+    <main>
+        <div class="CuadroRojo">
+            <img src="A_Imagens/P2.png" alt="">
+            <input type="text" placeholder="Nombre" name="nombre">
+            <input type="number" placeholder="Peso" name="peso"><b>kg</b>
+            <input type="number" placeholder="Altura" name="altura"><b>m</b>
+            <div class="pokemon-gender">
+                <p>H</p>
+                <P>M</P>
+                <img src="A_Imagens/1x/Shiny.png" alt="">
+                <label>
+                    <input type="radio" name="genero" value="hombre">
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="mujer">
+                </label>
+            </div>
+            <div class="pokemon-shiny">
+                <label class="switch">
+                    <input type="checkbox" name="shiny">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <form action="procesar.php" method="post">
+                <div class="Stats">
+                    <div class="PS">
+                        <p>Vida:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="ATK">
+                        <p>Ataque:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="DEF">
+                        <p>Defensa:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="AE">
+                        <p>A.E:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="DE">
+                        <p>D.E:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="VEL">
+                        <p>Velocidad:</p>
+                        <input type="range" min="0" max="4" step="1">
+                    </div>
+                    <div class="TOTAL">
+                        <p>Total</p>
+                        <b>:0000</b>
+                    </div>
+                </div>
+                <button type="button" onclick="window.print()">Crear</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img src="A_Imagens/pokemon.png" alt="">
+        <img src="A_Imagens/Redes.png" alt="">
+    </footer>
+    
+</body>
+</html>

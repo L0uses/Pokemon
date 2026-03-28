@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    font-family: 'Flexo', Arial, sans-serif;
+    
+}
+@font-face {
+    font-family: 'Flexo';
+    src: url('D:\semestre 4\HTML 5 Y CSS3\P2\Trabajo_2\A_Fronts\flexo-regular') format('truetype');
+}
+header{
+    width: 1366px;
+    height: 250px;
+    background-color: rgb(214, 60, 60);
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+header img{
+    width: 500px;
+    height: 187px;
+    margin-bottom: 25px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.generaciones{
+    width: 1366px;
+    height: 80px;
+    background-color: rgb(25, 25, 25);
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+.generaciones a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 100px;
+    font-size: 48px;
+}
+main{
+    width: 1366px;
+    height: 2100px;
+
+    margin: 0 auto;
+
+    background-image: url("../A_Imagens/fondo.png");
+
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+}
+.fondoGris{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(239, 239, 239);
+
+    border-radius: 50px;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+}
+.fondoGris img:nth-child(2){
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+
+    margin-top: 600px;
+}
+.info{
+    position: absolute;
+}
+.info p:nth-child(1){
+    font-size: 40px;
+
+    width: 222px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+
+    position: absolute;
+    margin-top: 200px;
+    margin-left:-115px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.info p:nth-child(2){
+    font-size: 40px;
+
+    width: 222px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+
+    position: absolute;
+    margin-top: 280px;
+    margin-left:-115px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.PokemonP{
+    width: 365px;
+    height: 365px;
+    background: linear-gradient(
+    to bottom,
+    rgb(214, 60, 60)0%,
+    rgb(214, 60, 60)40%,
+    rgb(25, 25, 25)40% ,
+    rgb(25, 25, 25)60% ,
+    rgb(255, 255, 255)60%,
+    rgb(255, 255, 255)100%);
+
+    border-radius: 60px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.PokemonP img{
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(
+    rgb(209, 237, 237)60%,
+    rgb(177, 232, 238)100% );
+
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.Pestaña{
+    width: 215px;
+    height: 68px;
+    background-color: rgb(214, 60, 60);
+
+    clip-path: polygon(
+        0 0,
+        75% 0,
+        100% 100%,
+        0 100%
+    );
+
+    position: absolute;
+
+    margin-top: 1000px;
+    margin-left: -215px
+}
+.bola{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(164, 216, 255);
+
+    margin-top: 18px;
+    margin-left: 15px
+}
+.Pokedex{
+    width: 430px;
+    height: 330px;
+    background-color: rgb(214, 60, 60);
+
+    position: absolute;
+
+    margin-top: 1068px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.infoDex{
+    width: 380px;
+    height: 280px;
+    background-color: rgb(161, 244, 255);
+
+    font-size: 36px;
+}
+table{
+    border-collapse: collapse;
+    position: absolute;
+
+    margin-top: 1500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+td{
+    width: 62px;
+    height: 50px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+td img{
+    width: 35px;
+    height: 35px;
+    
+    margin-left: 13.5px;
+    margin-top: 5px;
+}
+.Efectivo img{
+    width: 20px;
+    height: 20px;
+    
+    margin-left: 22px;
+    margin-top: 5px;
+}
+.Botton{
+    width: 640px;
+    height: 131px;
+    background-color:  rgb(214, 60, 60);
+    border-radius: 20px;
+
+    margin-top: 1800px;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.Botton a{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+      text-decoration: none;
+}
+footer{
+    width: 1366px;
+    height: 430px;
+
+    background-image: url("../A_Imagens/Foother_fondo.png");
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+}
+footer img:nth-child(1){
+    width: auto;
+    height: 140px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+
+    position: absolute;
+}
+
+footer img:nth-child(2){
+    width: auto;
+    height: 70px;
+    margin-left: 1000px;
+    margin-top: 250px;
+
+    position: absolute;
+}
+.Venenoso{
+    width: 85px;
+    height: 85px;
+
+    margin-left: 150px;
+    margin-top: 600px;
+
+    position: absolute;
+}
+.plantasa{
+        margin-left: -150px;
+}

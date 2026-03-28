@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    font-family: 'Flexo', Arial, sans-serif;
+    
+}
+@font-face {
+    font-family: 'Flexo';
+    src: url('D:\semestre 4\HTML 5 Y CSS3\P2\Trabajo_2\A_Fronts\flexo-regular') format('truetype');
+}
+header{
+    width: 1366px;
+    height: 250px;
+    background-color: rgb(214, 60, 60);
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+header img{
+    width: 500px;
+    height: 187px;
+    margin-bottom: 25px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.generaciones{
+    width: 1366px;
+    height: 80px;
+    background-color: rgb(25, 25, 25);
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+.generaciones a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 100px;
+    font-size: 48px;
+}
+main{
+    width: 1366px;
+    height: 2100px;
+
+    margin: 0 auto;
+
+    background-image: url("../A_Imagens/fondo.png");
+
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+}
+.CuadroRojo{
+    width: 870px;
+    height: 1400px;
+    background-color: rgb(214, 60, 60);
+    border-radius: 45px;
+
+    margin-top: 200px;
+
+    position: relative;
+}
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
+input[type="text"]{
+    background-color: rgb(161, 244, 255); 
+    border: 8px solid rgb(114, 114, 114);  
+    border-radius: 25px;  
+    margin-top: 80px;   
+    margin-left: 30px;          
+    padding: 10px;                      
+    width: 300px;                       
+    color: rgb(0, 11, 129);  
+    font-size: 36px;   
+    
+    position: absolute;
+}
+input[name="peso"] {
+    background-color: rgb(161, 244, 255);
+    border: 8px solid rgb(114, 114, 114);
+    border-radius: 50px;     
+    margin-top: 200px;   
+    margin-left: 35px;  
+    padding: 10px;           
+    width: 120px;                         
+    color: rgb(0, 11, 129);   
+    font-size: 36px;                   
+
+    position: absolute;
+}
+input[name="peso"] + b{           
+    color: rgb(255, 255, 255);   
+    margin-top: 230px;   
+    margin-left: 200px;  
+    font-size: 36px;                   
+
+    position: absolute;
+}
+input[name="altura"] {
+    background-color: rgb(161, 244, 255);
+    border: 8px solid rgb(114, 114, 114);
+    border-radius: 50px;     
+    margin-top: 300px;   
+    margin-left: 35px;  
+    padding: 10px;           
+    width: 120px;                         
+    color: rgb(0, 11, 129); 
+    font-size: 36px;                  
+
+    position: absolute;
+}
+input[name="altura"] + b{           
+    color: rgb(255, 255, 255);   
+    margin-top: 330px;   
+    margin-left: 200px;  
+    font-size: 36px;                   
+
+    position: absolute;
+}
+.CuadroRojo img:nth-child(1){
+    
+    background-color: rgb(161, 244, 255);
+    border: 8px solid rgb(114, 114, 114);
+    padding: 30px;
+    box-sizing: border-box;
+
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.pokemon-gender img{
+    margin-top: -50px;
+    margin-left: 280px;
+}
+.CuadroRojo p:nth-child(1){
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+    margin-left: 80px;
+    margin-top: 25px;
+
+}
+.CuadroRojo p:nth-child(2){
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+    margin-left: 160px;
+    margin-top: -42px;
+}
+.CuadroRojo p:nth-child(3){
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+    margin-left: 280px;
+    margin-top: -42px;
+}
+label{
+    display: flex;
+    justify-content: left;
+
+}
+input[value="hombre"] {
+    transform: scale(3);
+
+    margin-left: 87px;
+    margin-top: 25px;
+
+    cursor: pointer;
+}
+input[value="mujer"] {
+    transform: scale(3);
+
+    margin-left: 170px;
+    margin-top: -12px;
+
+    cursor: pointer;
+}
+
+.pokemon-gender input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgb(114, 114, 114);
+    border-radius: 50%;
+    background-color: rgb(161, 244, 255);
+    cursor: pointer;
+    position: relative;
+}
+.pokemon-gender label:nth-of-type(1) {
+    margin-left: -2px;
+    margin-top: -10px;
+}
+.pokemon-gender label:nth-of-type(2) {
+    margin-left: -3px;
+    margin-top: -5px;
+}
+.pokemon-gender input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 11, 129); 
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.1s;
+}
+.pokemon-gender input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+input[type="checkbox"] {
+
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 55px;
+
+    margin-left: 280px;
+    top: -30px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(161, 244, 255);
+    border: 8px solid rgb(114, 114, 114);
+    transition: 0.5s;
+    border-radius: 40px;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: rgb(228, 255, 161);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(25px);
+    background-color: rgb(0, 11, 129); 
+}
+
+
+footer{
+    width: 1366px;
+    height: 430px;
+
+    background-image: url("../A_Imagens/Foother_fondo.png");
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+}
+footer img:nth-child(1){
+    width: auto;
+    height: 140px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+
+    position: absolute;
+}
+footer img:nth-child(2){
+    width: auto;
+    height: 70px;
+    margin-left: 1000px;
+    margin-top: 250px;
+
+    position: absolute;
+}
+.Stats{
+    margin-top: -20px;
+}
+.Stats input[type="range"] {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 20px;
+    margin-left: 300px;
+    margin-top: -27px;
+    cursor: pointer;
+    position: absolute;
+}
+.Stats input[type="range"] {
+    
+    background: linear-gradient(
+        to right,
+        #A1F4FF 0%, #A1F4FF 18%,
+        transparent 18%, transparent 20%,
+        #A1F4FF 20%, #A1F4FF 38%,
+        transparent 38%, transparent 40%,
+        #A1F4FF 40%, #A1F4FF 58%,
+        transparent 58%, transparent 60%,
+        #A1F4FF 60%, #A1F4FF 78%,
+        transparent 78%, transparent 80%,
+        #A1F4FF 80%, #A1F4FF 100%
+    );
+    border-radius: 10px;
+}
+.TOTAL B{
+    width: 100px;
+    height: 20px;
+    background-color: #A1F4FF;
+    border: 8px solid rgb(114, 114, 114);
+    border-radius: 50px;
+    margin-left: 300px;
+    margin-top: -35px;
+    cursor: pointer;
+    position: absolute;
+}
+button{
+    width: 580px;
+    height: 120px;
+    background-color: #AF9E9E;
+    border: 5px solid #B5ACAC;
+    border-radius: 20px;
+
+    margin-left: 150px;
+    margin-top: 150px;
+
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+}
+button:hover {
+    background-color: #B5ACAC;
+    border: 5px solid #AF9E9E;
+}
